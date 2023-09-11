@@ -15,10 +15,11 @@ export const Header = () => {
   };
 
   return (
-    <motion.div initial={false} animate={isOpen ? "open" : "closed"}>
-      <motion.nav className="flex items-center justify-between mr-10">
-        <motion.img animate={{ rotate: 90,  transition: { duration: 3 }, }}   initial={{ rotate:-20, }}
-   whileInView={{ rotate: 0,  transition: { duration: 3 }, }} 
+    <header  className="relative">
+    <motion.div initial={false} animate={isOpen ? "open" : "closed"}  className="sticky top-0 z-50 ">
+      <motion.nav className="flex items-center justify-between mr-10 ">
+        <motion.img animate={{ rotate: 90,  transition: { duration: 2}, }}   initial={{ rotate:-20, }}
+   whileInView={{ rotate: 0,  transition: { duration: 1 }, }} 
 
  whileHover={{
     scale: 1.2,
@@ -101,7 +102,7 @@ export const Header = () => {
         </motion.button>
       </motion.nav>
       <motion.ul
-        className={` text-blue-400 hover:text-red-400 py-2 px-3 text-sm sm:hidden`}
+        className={` text-blue-400 hover:text-red-400 py-2 text-sm absolute -mt-2 z-20 w-full`}
         variants={{
           open: {
             clipPath: "inset(0% 0% 0% 0% )",
@@ -122,7 +123,7 @@ export const Header = () => {
             },
           },
         }}
-        style={{ pointerEvents: isOpen ? "auto" : "none" }}
+        style={{ pointerEvents: isOpen ? "auto" : "none", display: isOpen ? "block" : "none" }}
       >
         <motion.li
           variants={itemVariants}
@@ -169,5 +170,6 @@ export const Header = () => {
         </motion.li>
       </motion.ul>
     </motion.div>
+    </header>
   );
 };

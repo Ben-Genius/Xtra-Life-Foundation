@@ -14,3 +14,15 @@
         margin: 0;
     }
 }
+.swiper-pagination-bullet {
+   
+    width: 8px;  /* adjust as per your requirement */
+    height: 4px; /* adjust as per your requirement */
+  }
+  .swiper-pagination {
+    bottom: 0 !important; 
+  }
+  .mySwiper .swiper-button-next::after, 
+.mySwiper .swiper-button-prev::after {
+    font-size: 12px;  /* Reduce the size of the arrow. Adjust as required */
+}

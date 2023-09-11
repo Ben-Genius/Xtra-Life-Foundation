@@ -23,7 +23,16 @@ export default {
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      backgroundImage: _theme => ({
+        'imgSm': "url('./src/assets/heroMobile.jpeg')",    
+        'imgMd': "url('./src/assets/heroTab.jpeg')",
+        'imgLg': "url('./src/assets/heroImg.png')",
+
+      })
+
+    },
   },
   plugins: [],
 }
