@@ -35,3 +35,91 @@ export const data = [    {
       category: 'Manny',
     },
   ];
+
+  export const xtraFooter = [
+      {
+        "title": "Support",
+        "links": [
+          {
+            "label": "Features",
+            "link": "#"
+          },
+          {
+            "label": "Pricing",
+            "link": "#"
+          },
+          {
+            "label": "Support",
+            "link": "#"
+          },
+          {
+            "label": "Forums",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "title": "Useful Links",
+        "links": [
+          {
+            "label": "About Us",
+            "link": "#"
+          },
+          {
+            "label": "Projects",
+            "link": "#"
+          },
+          {
+            "label": "Donations",
+            "link": "#"
+          },
+          {
+            "label": "Events",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "title": "Follow Us",
+        "links": [
+          {
+            "label": "Facebook",
+            "link": "#"
+          },
+          {
+            "label": "Twitter",
+            "link": "#"
+          },
+          {
+            "label": "Instagram",
+            "link": "#"
+          },
+          {
+            "label": "Youtube",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "title": "Contact Us",
+        "links": [
+          {
+            "label": "0202001000",
+            "link": "#"
+          },
+          {
+            "label": "xtralife@org.gh",
+            "link": "#"
+          },
+          {
+            "label": "+1 24829 9832 2832",
+            "link": "#"
+          },
+          {
+            "label": "+233 2011 77819",
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  
