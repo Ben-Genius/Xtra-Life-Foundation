@@ -32,7 +32,7 @@ const Community = () => {
           One of the Largest Global Shifts in the World Trending In our Missive
           Community Now!
         </h1>
-        <div className="sm:space-x-4 md:flex flex-wrap sm:justify-around items-center">
+        <div className="md:flex items-center justify-center  mx-auto">
           {cardsData.map((card, index) => (
             <Card
               key={index}
@@ -57,11 +57,11 @@ interface Props {
 
 const Card = ({ image, title, description }: Props) => {
   return (
-    <Paper className="flex flex-col items-center p-4 mx-auto h-auto md:h-[25rem] md:w-1/3 w-11/12 relative mb-10 md:mb-0 mt-10">
+    <Paper className="flex flex-col items-center p-8 mx-auto h-auto  md:w-[25rem] w-11/12 relative mb-10 md:mb-0 mt-10">
       <img
         src={image}
         alt="Card Illustration"
-        className="w-11/12 sm:w-[25rem] relative mx-auto -mt-6"
+        className="w-11/12 sm:w-[25rem] relative mx-auto -mt-10"
       />
       <h2 className="text-2xl sm:text-3xl  font-sans md:text-4xl font-bold mb-2 text-orange-600 mt-5">
         {title}

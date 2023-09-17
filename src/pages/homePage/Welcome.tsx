@@ -1,10 +1,9 @@
-import { Group } from '@mantine/core';
 import WelCard from '../../assets/welCard.jpeg';
 const welcome = () => {
   return (
-    <Group className='sm:container mx-auto mt-6 '>
+    <div className='mx-auto md:flex items-center w-[90%] justify-center mt-32 gap-10'   >
        
-              <div className=' bg-red-300 sm:h-[28rem] pb-2  '>
+              <div className=' bg-red-300 max-w-lg p-4 mb-10'>
        <center className='text-3xl font-bold py-3'>Welcome To The Foundation of Ghanaian Youth</center>
         <p className='md:p-4 text-sm leading-loose sm:pb-0'> 
             Fugiat veniam pariatur irure consectetur aliquip esse ipsum ipsum nisi aliqua.
@@ -18,10 +17,9 @@ const welcome = () => {
         </p>
 
        </div>
-<div className='w-full sm:h-[26rem]'>
-    <img src={WelCard} alt="Card Image" className='sm:h-[27rem] h-[28rem] object-cover w-full'/>
-</div>
-        </Group>
+    <img src={WelCard} alt="Card Image" width={700} className='object-contain mt-'/>
+
+        </div>
   )
 }
 

@@ -17,7 +17,7 @@ const Partners = () => {
   const images = [log1, log2, log3, log4, log5, log6, log7, log8];
   return (
     <>
-      <center><h1 className='font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl p-2'>Our Partners </h1></center>
+      <center className='mt-16'><h1 className='font-bold text-2xl  sm:text-3xl md:text-4xl lg:text-5xl p-2 '>Our Partners </h1></center>
       <Swiper
         spaceBetween={40}
         loop={true}
@@ -26,7 +26,7 @@ const Partners = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper mt-4"
+        className="mySwiper mt-4 mb-14 w-[80%] mx-auto"
         breakpoints={{
           // when window width is >= 640pxa
           0: {
@@ -49,7 +49,7 @@ const Partners = () => {
             <img
               src={image}
               alt={`Image ${index}`}
-              className="max-w-full h-full object-cover rounded-md "
+              className="max-w-full h-[10rem] object-contain mb-4 rounded-md "
             />
           </SwiperSlide>
         ))}
