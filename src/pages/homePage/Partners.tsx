@@ -49,7 +49,7 @@ const Partners = () => {
             <img
               src={image}
               alt={`Image ${index}`}
-              className="max-w-full h-[10rem] object-contain mb-4 rounded-md "
+              className="max-w-full h-[10rem] object-contain mb-4 rounded-md"
             />
           </SwiperSlide>
         ))}
