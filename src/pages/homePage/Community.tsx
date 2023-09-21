@@ -5,7 +5,7 @@ const Community = () => {
     {
       image:
         "https://images.unsplash.com/photo-1487546331507-fcf8a5d27ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
-      title: "Our Objective",
+      title: "Our Objective ",
       description:
         "Our 2023/24 Objective is to be able to raise GHC 500,000 for phase one of construction For The Future Village which would cater for the needs of underprivileged children in Ghana."
     },
@@ -19,7 +19,7 @@ const Community = () => {
     {
       image:
         "https://images.unsplash.com/photo-1547496614-cefe5757271a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80",
-      title: "Mission Statement",
+      title: "Mission Statement ",
       description:
         "Our aim is to reach out to disadvantaged children in Ghana through the organizing of outreaches, donations, and sensitization projects. We have organized over fifteen (15) charity events and projects since 2016 and impacted the lives of over 3000 underprivileged children."
     }
