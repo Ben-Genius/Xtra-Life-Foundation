@@ -3,9 +3,8 @@ import {BsWhatsapp,BsFacebook,BsYoutube,BsTwitter} from 'react-icons/bs';
 import foot from '../assets/footerlogo.png';
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: rem(120),
+    marginTop: rem(150),
     paddingTop: `calc(${theme.spacing.xl} * 2)`,
-    paddingBottom: `calc(${theme.spacing.xl} * 2)`,
     backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.white,
     borderTop: `${rem(1)} solid ${
       theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[2]
