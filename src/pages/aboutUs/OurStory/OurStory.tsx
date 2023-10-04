@@ -1,4 +1,4 @@
-import { Button, Box, Stack, Card } from "@mantine/core";
+import { Button, Box, Stack, } from "@mantine/core";
 import { BsHeart } from "react-icons/bs";
 import { GiMissileLauncher } from "react-icons/gi"
 import { FaPersonDotsFromLine } from "react-icons/fa6"
@@ -15,7 +15,7 @@ const OurStory = () => {
   return (
     <>
       <div
-        className="bg-cover text-white max-w-full h-[17rem] sm:h-screen  bg-center bg-no-repeat bg-imgSm sm:bg-imgMd lg:bg-imgLg"
+        className="bg-cover overelay relative text-white max-w-full h-[17rem] sm:h-screen  bg-center bg-no-repeat bg-imgSm sm:bg-imgMd lg:bg-imgLg"
 
       >
         <div className="p-3 md:p-5 w-full mb-3 flex flex-col items-center h-full justify-center relative">
