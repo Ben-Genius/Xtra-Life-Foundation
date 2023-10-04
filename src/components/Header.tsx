@@ -66,7 +66,9 @@ export const Header = () => {
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-blue-400  hover:text-red-400 -mt-20 transition-colors duration-300 cursor-pointer"
             >
+              <Link to='project'>
               Projects
+              </Link>
             </motion.li>
             <motion.li
               animate={{ y: -40 }}
@@ -173,7 +175,7 @@ export const Header = () => {
             variants={itemVariants}
             className="bg-white text-blue-400 border-b-[1px] hover:text-red-400 py-2 px-3 text-sm "
           >
-            Projects{" "}
+            <Link to="/project"> Projects </Link>
           </motion.li>
           <motion.li
             variants={itemVariants}
