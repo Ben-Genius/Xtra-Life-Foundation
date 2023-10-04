@@ -4,9 +4,10 @@ import { Main_Donate } from './pages/donate/Main_Donate'
 import { Header } from './components/Header'
 import Footer from './components/Footer'
 import { xtraFooter } from './data/data'
-import OurStory from './pages/aboutUs/OurStory/ourStory'
-import Team from './pages/aboutUs/Team/team'
-import Advisory from './pages/aboutUs/AdvisoryBoard/advisory'
+import ProjectOne from './pages/projects/ProjectOne'
+import Advisory from './pages/aboutUs/AdvisoryBoard/Advisory'
+import OurStory from './pages/aboutUs/OurStory/OurStory'
+import Team from './pages/aboutUs/Team/Team'
 const App = () => {
   return (
     <div>
@@ -18,7 +19,7 @@ const App = () => {
     <Route path="about" element={<OurStory/>}/>
     <Route path="team" element={<Team/>}/>
     <Route path="advisory-board" element={<Advisory/>}/>
-
+    <Route path="project" element={<ProjectOne/>}/>
    </Routes>
    <Footer xtraFooter={xtraFooter}/>
 
