@@ -8,6 +8,7 @@ import ProjectOne from './pages/projects/ProjectOne'
 import Advisory from './pages/aboutUs/AdvisoryBoard/Advisory'
 import OurStory from './pages/aboutUs/OurStory/OurStory'
 import Team from './pages/aboutUs/Team/Team'
+import Events from './pages/event/Events'
 const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const App = () => {
     <Route path="team" element={<Team/>}/>
     <Route path="advisory-board" element={<Advisory/>}/>
     <Route path="project" element={<ProjectOne/>}/>
+    <Route path ="events" element={<Events/>}/>
    </Routes>
    <Footer xtraFooter={xtraFooter}/>
 
