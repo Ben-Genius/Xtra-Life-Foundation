@@ -19,7 +19,6 @@ const ProjectOne: React.FC = () => {
                     Minim sint esse do sunt nisi.Minim sint aliqua elit velit nostrud dolore culpa sint dolor Lorem amet.
                     Labore labore incididunt laborum sit fugiat ullamco quis in ad.Esse ad nostrud proident do deserunt id esse id Lorem duis cupidatat do.Ut exercitation elit nulla sunt excepteur proident.
                     Deserunt cupidatat et veniam laboris do.Officia incididunt culpa do incididunt voluptate reprehenderit fugiat ut cupidatat nostrud laboris.Ut cupidatat quis laboris aliqua et enim eu.
-                    Aliquip est eiusmod sint occaecat veniam ea in.Magna aute voluptate sunt dolore dolor.Sint aute exercitation laboris quis labore aliquip sunt incididunt reprehenderit et officia esse.Velit irure officia esse sunt.Et nulla culpa nulla consequat qui ad sint sint laborum cupidatat eiusmod.
                 </p>
                 
                 <button className="text-blue-600">Read More »</button>
