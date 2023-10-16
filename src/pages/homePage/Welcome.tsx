@@ -10,10 +10,7 @@ const welcome = () => {
             Ut enim ipsum dolor cillum qui tempor et aute.Cupidatat magna sint dolore do aliquip amet sit non magna veniam occaecat veniam.
             Est ipsum excepteur consectetur esse veniam dolor cillum exercitation ipsum.
             Veniam sit pariatur Lorem id reprehenderit laboris culpa aliquip in velit ipsum mollit.
-            Laboris consectetur amet reprehenderit magna nulla velit adipisicing sint commodo proident aliqua ullamco sunt proident.
-
-            Veniam ullamco tempor nisi non cupidatat mollit magna eiusmod qui.
-            Eu mollit fugiat sunt tempor minim dolore laboris ullamco.
+            
         </p>
 
        </div>
