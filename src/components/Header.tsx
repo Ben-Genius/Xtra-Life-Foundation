@@ -21,9 +21,8 @@ export const Header = () => {
     <header className="relative">
       <motion.div initial={false} animate={isOpen ? "open" : "closed"} className="sticky top-0 z-50 ">
         <motion.nav className="flex items-center justify-between mr-10 ">
-          <motion.img animate={{ rotate: 90, transition: { duration: 2 }, }} initial={{ rotate: -20, }}
+          <motion.img 
             whileInView={{ rotate: 0, transition: { duration: 1 }, }}
-
             whileHover={{
               scale: 1.2,
               transition: { duration: 1 },
