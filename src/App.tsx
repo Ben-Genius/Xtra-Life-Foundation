@@ -9,6 +9,8 @@ import Advisory from './pages/aboutUs/AdvisoryBoard/Advisory'
 import OurStory from './pages/aboutUs/OurStory/OurStory'
 import Team from './pages/aboutUs/Team/Team'
 import Events from './pages/event/Events'
+import ContactUs from './pages/contactUs/ContactUs'
+
 const App = () => {
   return (
     <div>
@@ -22,6 +24,7 @@ const App = () => {
     <Route path="advisory-board" element={<Advisory/>}/>
     <Route path="project" element={<ProjectOne/>}/>
     <Route path ="events" element={<Events/>}/>
+    <Route path="contact-us" element={<ContactUs/>} />
    </Routes>
    <Footer xtraFooter={xtraFooter}/>
 
