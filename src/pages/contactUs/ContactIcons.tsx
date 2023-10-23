@@ -2,7 +2,6 @@ import { Text, Box, Stack, rem } from '@mantine/core';
 import {BsCloudSun, BsTelephoneInbound, } from 'react-icons/bs';
 import {FiMapPin} from 'react-icons/fi';
 import {MdOutlineAttachEmail}  from 'react-icons/md';
-import classes from "./ContactUs.module.css";
 
 interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
   icon: typeof BsCloudSun;
@@ -12,16 +11,16 @@ interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, '
 
 function ContactIcon({ icon: Icon, title, description, ...others }: ContactIconProps) {
   return (
-    <div className={classes.wrapper} {...others}>
+    <div  {...others}>
       <Box mr="md">
         <Icon style={{ width: rem(24), height: rem(24) }} />
       </Box>
 
       <div>
-        <Text size="xs" className={classes.title}>
+        <Text size="xs">
           {title}
         </Text>
-        <Text className={classes.description}>{description}</Text>
+        <Text >{description}</Text>
       </div>
     </div>
   );
