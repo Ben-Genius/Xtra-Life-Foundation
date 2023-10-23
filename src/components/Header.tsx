@@ -127,7 +127,6 @@ export const Header = () => {
         </motion.nav>
 
 
-        //Mobile Screens 
         <motion.ul
           className={` text-blue-400 hover:text-red-400 py-2 text-sm absolute -mt-2 z-20 w-full`}
           variants={{
