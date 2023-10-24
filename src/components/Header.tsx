@@ -5,6 +5,7 @@ import { MdOutlineArrowDropDown, MdArrowDropUp } from "react-icons/md";
 import { motion, Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 
+
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [show, setShow] = useState(false)
@@ -21,9 +22,8 @@ export const Header = () => {
     <header className="relative">
       <motion.div initial={false} animate={isOpen ? "open" : "closed"} className="sticky top-0 z-50 ">
         <motion.nav className="flex items-center justify-between mr-10 ">
-          <motion.img animate={{ rotate: 90, transition: { duration: 2 }, }} initial={{ rotate: -20, }}
+          <motion.img 
             whileInView={{ rotate: 0, transition: { duration: 1 }, }}
-
             whileHover={{
               scale: 1.2,
               transition: { duration: 1 },
@@ -66,21 +66,28 @@ export const Header = () => {
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-blue-400  hover:text-red-400 -mt-20 transition-colors duration-300 cursor-pointer"
             >
+              <Link to='project'>
               Projects
+              </Link>
             </motion.li>
             <motion.li
               animate={{ y: -40 }}
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-blue-400 mt-20  hover:text-red-400 transition-colors duration-300 cursor-pointer"
             >
-              Blog
+               <Link to='/event' className="m-0 p-0">
+               Events
+              </Link>
+             
             </motion.li>
             <motion.li
               animate={{ y: 40 }}
               transition={{ ease: "easeOut", duration: 2 }}
               className="text-blue-400 hover:text-red-400 -mt-20 transition-colors duration-300 cursor-pointer"
             >
+              <Link to="/contact-us">
               Contact
+              </Link>
             </motion.li>
             <motion.li
               animate={{ y: 40 }}
@@ -118,6 +125,8 @@ export const Header = () => {
             <HiOutlineMenuAlt3 />
           </motion.button>
         </motion.nav>
+
+
         <motion.ul
           className={` text-blue-400 hover:text-red-400 py-2 text-sm absolute -mt-2 z-20 w-full`}
           variants={{
@@ -140,8 +149,7 @@ export const Header = () => {
               },
             },
           }}
-          style={{ pointerEvents: isOpen ? "auto" : "none", display: isOpen ? "block" : "none" }}
-        >
+          style={{ pointerEvents: isOpen ? "auto" : "none", display: isOpen ? "block" : "none" }}>
           <motion.li
             variants={itemVariants}
             className="bg-white text-blue-400 border-b-[1px] hover:text-red-400 py-2 px-3 text-sm  "
@@ -173,19 +181,23 @@ export const Header = () => {
             variants={itemVariants}
             className="bg-white text-blue-400 border-b-[1px] hover:text-red-400 py-2 px-3 text-sm "
           >
-            Projects{" "}
+            <Link to="/project"> Projects </Link>
           </motion.li>
           <motion.li
             variants={itemVariants}
             className="bg-white text-blue-400 border-b-[1px] hover:text-red-400 py-2 px-3 text-sm "
           >
-            Blog{" "}
+            <Link to='/event' className="m-0 p-0">
+              Event
+              </Link>
           </motion.li>
           <motion.li
             variants={itemVariants}
             className="bg-white text-blue-400 border-b-[1px] hover:text-red-400 py-2 px-3 text-sm "
           >
-            Contact{" "}
+            <Link to='/contact-us'>
+              Contact
+              </Link>
           </motion.li>
           <motion.li
             variants={itemVariants}

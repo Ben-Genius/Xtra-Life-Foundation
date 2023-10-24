@@ -39,3 +39,13 @@
     border-radius: 5px;
     margin-bottom: 2.5rem;
 }
+.overlay::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0;
+    background-color: rgba(0,0,0,0.4);
+
+}
