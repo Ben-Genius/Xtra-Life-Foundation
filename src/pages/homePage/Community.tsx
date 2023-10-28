@@ -57,7 +57,7 @@ interface Props {
 
 const Card = ({ image, title, description }: Props) => {
   return (
-    <Paper className="flex flex-col items-center p-8 mx-auto h-auto  md:w-[25rem] w-11/12 relative mb-10 md:mb-0 mt-10">
+    <Paper className="flex flex-col items-center p-8 mx-auto h-auto  md:w-[25rem] w-11/12 relative mb-10 md:mb-0 mt-10 transition duration-500 ease-in-out transform hover:scale-105">
       <img
         src={image}
         alt="Card Illustration"
