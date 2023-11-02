@@ -18,11 +18,11 @@ const Welcome = () => {
           Welcome To The Foundation of Ghanaian Youth
         </center>
         <p className='md:p-4 text-sm leading-loose sm:pb-0'>
-        Fugiat veniam pariatur irure consectetur aliquip esse ipsum ipsum nisi aliqua.
-            Ut enim ipsum dolor cillum qui tempor et aute.Cupidatat magna sint dolore do aliquip amet sit non magna veniam occaecat veniam.
-            Est ipsum excepteur consectetur esse veniam dolor cillum exercitation ipsum.
-            Veniam sit pariatur Lorem id reprehenderit laboris culpa aliquip in velit ipsum mollit.
-                    </p>
+       Eu qui sunt ea commodo mollit tempor Lorem aliquip cupidatat.Sit duis pariatur duis nisi incididunt cupidatat duis cillum esse occaecat mollit aliqua.
+       Sint eu aliquip et excepteur nisi enim tempor nostrud dolore.Exercitation esse proident velit anim aliqua cupidatat amet minim anim duis enim.
+       Voluptate labore ex laborum aute id ut velit.Esse eiusmod laboris in incididunt adipisicing voluptate elit.
+       Consectetur sint nulla dolor eiusmod cupidatat eu nisi pariatur excepteur laboris pariatur.Fugiat aute nisi ipsum ullamco laboris cupidatat velit.
+         </p>
       </motion.div>
       <motion.img
         src={WelCard}
