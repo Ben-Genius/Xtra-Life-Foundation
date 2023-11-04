@@ -1,6 +1,9 @@
+import React from 'react';
 import { createStyles, Text, Container, ActionIcon, Group, rem, Image } from '@mantine/core';
-import {BsWhatsapp,BsFacebook,BsYoutube,BsTwitter} from 'react-icons/bs';
+import { BsWhatsapp, BsFacebook, BsYoutube, BsTwitter } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 import foot from '../assets/footerlogo.png';
+
 const useStyles = createStyles((theme) => ({
   footer: {
     marginTop: rem(150),
@@ -100,41 +103,73 @@ interface FooterLinksProps {
   }[];
 }
 
-const Footer = ({ xtraFooter }: FooterLinksProps) =>{
+const Footer = ({ xtraFooter }: FooterLinksProps) => {
   const { classes } = useStyles();
+
+  // Animation Variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const staggerContainer = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
 
   const groups = xtraFooter.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<'a'>
+      <motion.div
         key={index}
-        className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
+        whileHover={{ scale: 1.05 }}
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
       >
-        {link.label}
-      </Text>
+        <Text
+          className={classes.link}
+          component="a"
+          href={link.link}
+          onClick={(event: { preventDefault: () => any; }) => event.preventDefault()}
+        >
+          {link.label}
+        </Text>
+      </motion.div>
     ));
-
+  
     return (
-      <div className={classes.wrapper} key={group.title}>
+      <motion.div
+        className={classes.wrapper}
+        key={group.title}
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+      >
         <Text className={classes.title}>{group.title}</Text>
         {links}
-      </div>
+      </motion.div>
     );
   });
+  
 
   return (
     <footer className={classes.footer}>
       <Container className={classes.inner}>
-        <div className={classes.logo}>
-            <Image src={foot} alt="Footer logo" maw={100} />
-           <Text size="xs" color="dimmed" className={classes.description}>
-            Adipisicing fugiat nisi fugiat ad.Do mollit non adipisicing ex consectetur pariatur.
+        <motion.div className={classes.logo} initial="hidden" animate="visible" variants={fadeInUp}>
+          <Image src={foot} alt="Footer logo" maw={100} />
+          <Text size="xs" color="dimmed" className={classes.description}>
+            Adipisicing fugiat nisi fugiat ad. Do mollit non adipisicing ex consectetur pariatur.
           </Text>
-        </div>
-            <center className='p-4 sm:p-0'>        <div className={`${classes.groups}`}>{groups}</div>
-</center>
+        </motion.div>
+        <center className='p-4 sm:p-0'>
+          <motion.div className={`${classes.groups}`} variants={staggerContainer} initial="hidden" animate="visible">
+            {groups}
+          </motion.div>
+        </center>
       </Container>
       <Container className={classes.afterFooter}>
         <Text color="dimmed" size="sm">
@@ -142,21 +177,21 @@ const Footer = ({ xtraFooter }: FooterLinksProps) =>{
         </Text>
 
         <Group spacing={0} className={classes.social} position="right" noWrap>
-          <ActionIcon size="lg">
-            <BsWhatsapp size="1.05rem" stroke={1.5}  color="green"/>
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <BsYoutube size="1.05rem" stroke={1.5} color="red" />
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <BsFacebook size="1.05rem" stroke={1.5}  color="blue"/>
-          </ActionIcon>
-          <ActionIcon size="lg">
-            <BsTwitter size="1.05rem" stroke={1.5} color="blue"/>
-          </ActionIcon>
+          {['green', 'red', 'blue', 'blue'].map((color, index) => (
+            <ActionIcon
+              size="lg"
+              key={index}
+              style={{ transition: 'transform 0.1s ease' }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'scale(1.1)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'scale(1)'}
+            >
+              {React.createElement([BsWhatsapp, BsYoutube, BsFacebook, BsTwitter][index], { size: '1.05rem', stroke: 1.5, color })}
+            </ActionIcon>
+          ))}
         </Group>
       </Container>
     </footer>
   );
 }
-export default Footer
+
+export default Footer;
