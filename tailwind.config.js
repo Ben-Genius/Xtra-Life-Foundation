@@ -26,9 +26,9 @@ export default {
     extend: {
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
       backgroundImage: _theme => ({
-        'imgSm': "url('./src/assets/heroMobile.jpeg')",    
-        'imgMd': "url('./src/assets/heroTab.jpeg')",
-        'imgLg': "url('./src/assets/heroImg.png')",
+        'imgSm': "url('./heroMobile.jpeg')",    
+        'imgMd': "url('./heroTab.jpeg')",
+        'imgLg': "url('./heroImg.png')",
 
       })
 
