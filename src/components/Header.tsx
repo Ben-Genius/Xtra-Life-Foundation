@@ -22,12 +22,16 @@ export const Header = () => {
     <header className="relative">
       <motion.div initial={false} animate={isOpen ? "open" : "closed"} className="sticky top-0 z-50 ">
         <motion.nav className="flex items-center justify-between mr-10 ">
+          <Link to='/'>
           <motion.img 
             whileInView={{ rotate: 0, transition: { duration: 1 }, }}
             whileHover={{
               scale: 1.2,
               transition: { duration: 1 },
             }} src={Logo} alt="website logo" width="200rem" className="logo cursor-pointer" />
+
+          </Link>
+         
           <motion.ul
             animate={{ x: 0, y: 2 }}
             transition={{ ease: "easeOut", duration: 2 }}
