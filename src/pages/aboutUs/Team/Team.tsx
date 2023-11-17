@@ -34,7 +34,7 @@ const MemberCard: React.FC<MemberProps> = ({ member }) => {
     return (
         <>
            <div
-        className="bg-cover give overlay relative text-white max-w-full h-[17rem] sm:h-screen  bg-center bg-no-repeat bg-imgSm sm:bg-imgMd lg:bg-imgLg"
+        className="bg-cover give overlay relative text-white max-w-full h-[17rem] sm:h-screen  bg-center bg-no-repeat background"
 
       >
         <div className="p-3 md:p-5 w-full mb-3 flex flex-col items-center h-full justify-center relative">
