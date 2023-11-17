@@ -44,7 +44,7 @@ const Hero = () => {
   return (
     <motion.div className="overflow-hidden">
       <motion.div
-        className="bg-cover give overlay relative text-white max-w-full h-[17rem] sm:h-screen bg-center bg-no-repeat bg-imgSm sm:bg-imgMd lg:bg-imgLg"
+        className="background bg-cover give overlay relative text-white max-w-full h-[17rem] sm:h-screen bg-center bg-no-repeat "
         initial="hidden"
         animate="visible"
         variants={imageAnimation}

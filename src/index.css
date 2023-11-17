@@ -7,13 +7,10 @@
     padding:0;
     box-sizing: border-box;
 }
-
-@media only screen and (min-width: 768px) {
-    .logo{
-        width: 18rem;
-        margin: 0;
-    }
+.background{
+    background-image: url('../src/assets/heroTab.jpeg');
 }
+
 .swiper-pagination-bullet {
    
     width: 8px;  /* adjust as per your requirement */
@@ -48,4 +45,22 @@
     left: 0;
     background-color: rgba(0,0,0,0.4);
 
+}
+
+
+@media only screen and (min-width: 768px) {
+    .logo {
+        width: 18rem;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .background{
+    background-image: url('../src/assets/heroMobile.jpeg');
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .background{
+    background-image: url('../src/assets/heroImg.png');
+    }
 }
